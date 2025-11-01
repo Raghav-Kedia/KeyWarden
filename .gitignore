@@ -107,10 +107,6 @@ lerna-debug.log*
 
 # VS Code
 .vscode/*
-!.vscode/extensions.json
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
 
 # JetBrains (IntelliJ, WebStorm, PhpStorm, etc.)
 .idea/
