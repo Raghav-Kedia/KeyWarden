@@ -106,7 +106,7 @@ lerna-debug.log*
 # =========================================================
 
 # VS Code
-.vscode/*
+.vscode/
 
 # JetBrains (IntelliJ, WebStorm, PhpStorm, etc.)
 .idea/
