@@ -3,5 +3,5 @@
 import { AddFieldDropdown } from "../src/components/AddFieldDropdown"
 
 export default function SyntheticV0PageForDeployment() {
-  return <AddFieldDropdown />
+  return <AddFieldDropdown onAddField={(name) => { /* no-op handler */ }} existingFieldNames={[]} />
 }

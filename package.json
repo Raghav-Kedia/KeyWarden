@@ -61,6 +61,7 @@
         "globals": "^15.11.0",
         "jsdom": "^25.0.0",
         "postcss": "^8.5",
+        "serve": "^14.2.5",
         "tailwindcss": "^4.1.9",
         "typescript": "^5",
         "typescript-eslint": "^8.10.0",

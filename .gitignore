@@ -1,27 +1,212 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# debug
+# =========================================================
+# 🔧 CORE NODE + PACKAGE MANAGERS
+# =========================================================
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 .pnpm-debug.log*
+package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
 
-# env files
-.env*
-
-# vercel
-.vercel
-
-# typescript
+# =========================================================
+# ⚙️ VITE CONFIGURATION
+# =========================================================
+dist/
+.vite/
+.vitepress/
 *.tsbuildinfo
+vite.config.ts.timestamp*
+*.local
+*.preview
+
+# =========================================================
+# ⚙️ NEXT.JS CONFIGURATION
+# =========================================================
+.next/
+out/
+.vercel/
+.next.cache/
 next-env.d.ts
+next.config.mjs.timestamp*
+
+# =========================================================
+# 🧪 TESTS / COVERAGE / REPORTS
+# =========================================================
+coverage/
+*.lcov
+jest-html-reporters-*
+.nyc_output/
+test-results/
+playwright-report/
+cypress/videos/
+cypress/screenshots/
+
+# =========================================================
+# 📂 BUILD OUTPUT
+# =========================================================
+build/
+out/
+dist/
+*.tgz
+
+# =========================================================
+# ⚡ ENVIRONMENT FILES
+# =========================================================
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.production.local
+.env.test.local
+.env.preview.local
+.env.example
+
+# Local certificates / SSL
+*.pem
+*.crt
+*.key
+
+# =========================================================
+# 🧩 CACHES & TEMP FILES
+# =========================================================
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+.sass-cache/
+tmp/
+temp/
+*.tmp
+*.temp
+
+# =========================================================
+# 🧠 TYPECHECKING / LINTING
+# =========================================================
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# =========================================================
+# 🧰 LOGS
+# =========================================================
+logs/
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# =========================================================
+# 💻 EDITORS / IDEs
+# =========================================================
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# JetBrains (IntelliJ, WebStorm, PhpStorm, etc.)
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+# =========================================================
+# 🖥️ OS-SPECIFIC FILES
+# =========================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+.Trash-*
+.nfs*
+
+# =========================================================
+# 🧱 STATIC SITE / DEPLOYMENT
+# =========================================================
+.vercel/
+.netlify/
+firebase-debug.log
+functions/lib/
+uploads/
+public/uploads/
+public/tmp/
+
+# =========================================================
+# 🧩 FRAMEWORK-SPECIFIC (OPTIONAL)
+# =========================================================
+
+# Svelte / Solid / Astro
+.svelte-kit/
+.solid-start/
+.astro/
+
+# Storybook
+.storybook-out/
+storybook-static/
+
+# =========================================================
+# 🗄️ DATABASES / LOCAL STORAGE
+# =========================================================
+*.sqlite
+*.db
+*.sql
+*.sqlite3
+
+# =========================================================
+# 🔒 SECRETS & PRIVATE KEYS
+# =========================================================
+secrets/
+keys/
+*.key
+*.p12
+*.cer
+
+# =========================================================
+# 🚀 CUSTOM PROJECT ARTIFACTS
+# =========================================================
+# Uncomment or adjust per project:
+# /api/
+# /server/
+# /functions/
+# /scripts/
+# /mock_data/
+
+# =========================================================
+# 🧾 MISCELLANEOUS
+# =========================================================
+*.bak
+*.orig
+*.rej
+*.swp
+*.swo
+*.class
+*.pid
+*.seed
+*.pid.lock
+*.swm
+*.tmp
+*.temp
+
+# =========================================================
+# ✅ END
+# =========================================================
